@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cart.css" />
+    <title>MyCart</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="nav-left">Shopify</div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../loginPage/index.html">Login</a></li>
+            <li><a href="../signupPage/index.html">Signup</a></li>
+            <li><a href="#">MyCart</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <div class="content">
+          <div class="part1">
+            <h1>My Cart</h1>
+          </div>
+          <div class="part2">
+            <div class="cart-items">
+              <div class="items"></div>
+            </div>
+            <div class="checkList">
+              <div class="checkList-content">
+                <div class="cl-part1">
+                  <h4>Checkout List</h4>
+                </div>
+                <div class="cl-part2">
+                  <div class="total">
+                    <span>Total</span>
+                    <span class="totalAmount">Rs 900/-</span>
+                  </div>
+                </div>
+                <div class="cl-part3">
+                  <button id="checkoutBtn">Click to Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
